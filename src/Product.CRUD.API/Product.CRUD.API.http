@@ -1,0 +1,20 @@
+@API_HostAddress = http://localhost:5007
+
+GET {{API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###GET Products
+GET {{API_HostAddress}}/api/products
+Accept: application/json
+
+###GET Product by Id
+GET {{API_HostAddress}}/api/products/e4156ec7-e0d9-4850-a792-a0f570444e0d
+
+###POST Product
+POST {{API_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Product 1",
+  "description": "100"
+}
